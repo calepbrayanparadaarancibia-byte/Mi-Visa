@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+}
+.barra-navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    border-bottom: 2px solid #0039a6;
+    z-index: 1000;
+}
+.logo {
+    height: 50px;
+}
+.menu-navegacion ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.menu-navegacion a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.menu-navegacion a:hover {
+    color: #0039a6;
+}
+.portada {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url('imagenes/paisaje1.avif');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+}
+.capa-oscura {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.contenido-portada {
+    position: relative;
+    z-index: 10;
+    padding: 20px;
+}
+.portada h2.subtitulo {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.portada h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+.portada p {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.texto-dorado {
+    color: #D4AF37;
+}
+.botones-portada {
+    margin-top: 30px;
+}
+.boton-dorado {
+    background-color: #D4AF37;
+    color: black;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-right: 10px;
+    display: inline-block;
+}
+.boton-dorado:hover {
+    background-color: #e6c555;
+}
+.boton-borde {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 13px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+}
+.boton-borde:hover {
+    background-color: white;
+    color: black;
+}
+.seccion-servicios {
+    padding: 80px 50px;
+    text-align: center;
+}
+.titulo-seccion h2 {
+    color: #555555;
+    font-size: 18px;
+}
+.titulo-seccion h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+.cuadricula-servicios {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.tarjeta-servicio {
+    background-color: white;
+    width: 300px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    text-align: center;
+}
+.tarjeta-servicio:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.imagen-tarjeta img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.contenido-tarjeta {
+    padding: 25px;
+}
+.icono-tarjeta {
+    font-size: 40px;
+    color: #0039a6;
+    margin-bottom: 15px;
+}
+.contenido-tarjeta h3 {
+    margin-bottom: 10px;
+}
+.seccion-destinos {
+    padding: 80px 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.cuadricula-destinos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.foto-destino img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.foto-destino img:hover {
+    transform: scale(1.05);
+}
+.seccion-contacto {
+    padding: 80px 50px;
+    background-color: #121212;
+    color: white;
+    text-align: center;
+}
+.botones-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+.tarjeta-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    padding: 25px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: white;
+}
+.tarjeta-social i {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+.fondo-whatsapp {
+    background-color: #25d366;
+}
+.fondo-facebook {
+    background-color: #1877f2;
+}
+.fondo-tiktok {
+    background-color: #000000;
+    border: 1px solid #D4AF37;
+}
+.tarjeta-social:hover {
+    opacity: 0.8;
+}
+.pie-pagina {
+    background-color: #000000;
+    color: #888888;
+    text-align: center;
+    padding: 30px;
+}
+.whatsapp-flotante {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366;
+    color: white;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    z-index: 2000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.whatsapp-flotante:hover {
+    transform: scale(1.1);
+}
+@media (max-width: 768px) {
+    .menu-navegacion {
+        display: none;
+    }
+    .portada h1 {
+        font-size: 35px;
+    }
+    .botones-portada {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .boton-dorado {
+        margin-right: 0;
+    }
+}
